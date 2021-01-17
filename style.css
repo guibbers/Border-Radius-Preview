@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+   --primary-color: #f7c7a1;
+   --secondary-color: #e59b7b;
+ }
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   font-family: 'Poppins', sans-serif;
+   background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color) );
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 80vh;
+}
+
+.box {
+   background: linear-gradient(to right, #fff, rgb(207, 206, 206));
+   height: 400px;
+   width: 25%;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+
+.input {
+   position: relative;
+   width: 5%;
+}
+
+.upper-left {
+   position: absolute;
+   left: 32%;
+   top: 35%;
+}
+
+.upper-right {
+   position: absolute;
+   right: 32%;
+   top: 35%;
+}
+
+.lower-right {
+   position: absolute;
+   right: 32%;
+   bottom: 17.5%;
+}
+
+.lower-left {
+   position: absolute;
+   left: 32%;
+   bottom: 17.5%;
+}
+
+input {
+   width: 100%;
+   text-align: center;
+   font-weight: 600;
+}
+
+header{
+   background-color: #fff;
+   width: 200px;
+   height: 200px;
+   padding: 1.5rem;
+   border-radius: 50% 50% 5% 50%;
+   margin-top: 20px;
+   margin-bottom: 80px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.418);
+}
+
+header h1 {
+   margin-left: 20px;
+   line-height: 50px
+}
+
+.buttons {
+   margin-top: 100px;
+}
+
+.buttons button {
+   padding: 0.5rem;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 798px) {
+
+   header {
+      width: 100px;
+      height: 100px;
+   }
+
+   header h1 {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-left: 0;
+   }
+
+   input {
+      width: 3rem;
+   }
+
+   .box {
+      height: 100px;
+   }
+
+   .upper-left, .upper-right, .lower-left, .lower-right {
+      align-self: center;
+      justify-self: center;
+   }
+
+   .upper-left {
+      position: absolute;
+      left: 21%;
+      top: 37.5%;
+   }
+   
+   .upper-right {
+      position: absolute;
+      right: 29%;
+      top: 37.5%;
+   }
+   
+   .lower-right {
+      position: absolute;
+      right: 29%;
+      bottom: 49.5%;
+   }
+   
+   .lower-left {
+      position: absolute;
+      left: 21%;
+      bottom: 49.5%;
+   }
+}
